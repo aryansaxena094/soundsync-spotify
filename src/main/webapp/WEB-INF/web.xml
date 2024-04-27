@@ -1,0 +1,90 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>SearchController</servlet-name>
+  	<display-name>SearchController</display-name>
+  	<description></description>
+  	<servlet-class>com.app.spotify.controller.SearchController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AlbumSpotifyController</servlet-name>
+  	<display-name>AlbumSpotifyController</display-name>
+  	<description></description>
+  	<servlet-class>com.app.spotify.controller.AlbumSpotifyController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>PlaylistController</servlet-name>
+  	<display-name>PlaylistController</display-name>
+  	<description></description>
+  	<servlet-class>com.app.spotify.controller.PlaylistController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddPlaylistController</servlet-name>
+  	<display-name>AddPlaylistController</display-name>
+  	<description></description>
+  	<servlet-class>com.app.spotify.controller.AddPlaylistController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeletePlaylistController</servlet-name>
+  	<display-name>DeletePlaylistController</display-name>
+  	<description></description>
+  	<servlet-class>com.app.spotify.controller.DeletePlaylistController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetPlaylistControllerForUpdate</servlet-name>
+  	<display-name>GetPlaylistControllerForUpdate</display-name>
+  	<description></description>
+  	<servlet-class>com.app.spotify.controller.GetPlaylistControllerForUpdate</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetPlaylistControllerForDelete</servlet-name>
+  	<display-name>GetPlaylistControllerForDelete</display-name>
+  	<description></description>
+  	<servlet-class>com.app.spotify.controller.GetPlaylistControllerForDelete</servlet-class>
+  </servlet>
+   <servlet>
+  	<servlet-name>UpdatePlaylistController</servlet-name>
+  	<display-name>UpdatePlaylistController</display-name>
+  	<description></description>
+  	<servlet-class>com.app.spotify.controller.UpdatePlaylistController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>SearchController</servlet-name>
+  	<url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AlbumSpotifyController</servlet-name>
+  	<url-pattern>/album/*</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+  	<servlet-name>PlaylistController</servlet-name>
+  	<url-pattern>/playlist/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddPlaylistController</servlet-name>
+  	<url-pattern>/addplaylist/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeletePlaylistController</servlet-name>
+  	<url-pattern>/deleteplaylist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetPlaylistControllerForUpdate</servlet-name>
+  	<url-pattern>/getplaylistupdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetPlaylistControllerForDelete</servlet-name>
+  	<url-pattern>/getplaylistdelete</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+  	<servlet-name>UpdatePlaylistController</servlet-name>
+  	<url-pattern>/updateplaylist</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

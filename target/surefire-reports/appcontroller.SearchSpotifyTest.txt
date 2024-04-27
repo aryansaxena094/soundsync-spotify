@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: appcontroller.SearchSpotifyTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! - in appcontroller.SearchSpotifyTest
+test(appcontroller.SearchSpotifyTest)  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: Not yet implemented
+	at appcontroller.SearchSpotifyTest.test(SearchSpotifyTest.java:11)
+
