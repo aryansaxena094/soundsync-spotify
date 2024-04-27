@@ -1,48 +1,46 @@
 # Spotify Web API with Java
 
-##Introduction
+## Overview
 
-The use of Spotify’s REST API to create a web application in accordance to several coding standards and software design methodologies have been studied in this project. 
-A database is created to handle the incoming information from the API and the same is being used to display specific information on the web application. 
-The entire code base has been thoroughly tested using Java’s JUnit 5.
+This project explores the development of a web application using Spotify's REST API. The application adheres to various coding standards and software design methodologies. A backend database is integrated to manage data retrieved from Spotify's API, facilitating the display of specific information on the web application. Comprehensive testing has been conducted using Java’s JUnit 5 to ensure the robustness and reliability of the code.
 
-A simple web interface has been developed, that takes a string value which is basically a name of a track.
-The user is now displayed with a list of playlists that contains this track along with its related tracks. 
-Furthermore, the user is provided with an option to create a new playlist of his/her choice and add this track to it. 
-Once this action is performed, the user’s playlist data is stored in a backend database, which is further used for information retrieval and validation.
-The individual components or pieces of methods/classes have been extensively tested using JUnit 5 framework. 
-Complementing this unit testing, regression testing has also been performed, which makes certain that the latest fix, enhancement, or patch did not break existing functionality.
-The components of the code tend to undergo several iterations, changes and enhancements which deteriorate the quality, maintainability and efficiency of the software. We have also studied and utilized several refactoring methodologies to overcome this cause an effect. 
+## Features
 
-##Description
+### Simple Web Interface
+The web application features a user-friendly interface where users can:
+- **Search**: Enter a track name to find playlists containing the track along with related tracks.
+- **Create Playlist**: Users can create new playlists and add tracks.
+- **Update Playlist**: Existing playlists can be renamed.
+- **Delete Playlist**: Users have the option to delete unwanted playlists.
 
-This is a JAVA application that externally calls Spotify’s API and retrieves the records of the same and renders to a web page.
+### Data Handling and Storage
+All user actions that modify playlists are reflected in a backend database which supports further data retrieval and validation.
 
-The first web page that renders when you run the application is Fig 
+### Testing and Quality Assurance
+- **Unit Testing**: Each component of the application is tested using the JUnit 5 framework to validate individual pieces of the code.
+- **Regression Testing**: Ensures that new updates do not disrupt existing functionalities.
 
-<p align="center">
-  <img src="https://github.com/ananyavarsha/spotifyv2/blob/master/1.jpg" alt="IMAGE" style="width:400px;"/>
-</p>
+### Software Refactoring
+The application code undergoes continuous refinement to enhance quality, maintainability, and performance. Various refactoring techniques are employed to mitigate issues arising from code evolution.
 
-This page has four entities. 
-Search Bar: to search for the albums that you wish to see.
-Create Playlist: If you want to add tracks into your system, you first need to create a playlist.
-Update Playlist: If you wish to change the name of your existing playlist, you can do it using update playlist button.
-Delete Playlist: If you wish to delete the playlist, it can be done using delete playlist button.
+## Application Flow
 
-When you search for a particular track, and hit the search button, it will display all the albums containing the tracks you searched for. This is shown in the Fig 
+1. **Initial Page Load**:
+   ![Initial Web Interface](https://github.com/ananyavarsha/spotifyv2/blob/master/1.jpg)
+   - **Search Bar**: Look up albums or tracks.
+   - **Create Playlist**: Initiate a new playlist.
+   - **Update Playlist**: Modify the name of an existing playlist.
+   - **Delete Playlist**: Remove an existing playlist.
 
-<p align="center">
-  <img src="https://github.com/ananyavarsha/spotifyv2/blob/master/2.jpg" alt="IMAGE" style="width:400px;"/>
-</p>
+2. **Search Results**:
+   When a track is searched, all albums containing that track are displayed.
+   ![Search Results Interface](https://github.com/ananyavarsha/spotifyv2/blob/master/2.jpg)
 
-If you wish to see the track list for a particular album, you can do it by clicking on the Name field’s result, which will take you to the next page that will list all the tracks in that album.
+3. **Album Tracks**:
+   Clicking on an album name displays all tracks within that album.
+   ![Album Tracks Interface](https://github.com/ananyavarsha/spotifyv2/blob/master/3.jpg)
 
+## Additional Resources
+- **Full Demonstration Video**: [View Demo](https://liveconcordia-my.sharepoint.com/:f:/g/personal/ar_saxe_live_concordia_ca/El49r-Dgkw5Fk72EVfn3UlkBqKujlyiTOhaegpLVuaChwg?e=yTN6f0)
 
-<p align="center">
-  <img src="https://github.com/ananyavarsha/spotifyv2/blob/master/3.jpg" alt="IMAGE" style="width:400px;"/>
-</p>
-
-
-Full demo is shown in a video avaiable in the following link:
-[video link](https://liveconcordia-my.sharepoint.com/:f:/g/personal/ar_saxe_live_concordia_ca/El49r-Dgkw5Fk72EVfn3UlkBqKujlyiTOhaegpLVuaChwg?e=yTN6f0)
+This documentation provides a structured overview of the project, facilitating easier understanding and navigation of the application’s capabilities and features.
